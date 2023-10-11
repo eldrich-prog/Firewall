@@ -45,6 +45,7 @@ def launch_process(PROTOCOLS:list):
 
 
 if __name__ == "__main__":
+    #cambiar direccion ip segun corresponda
     ADDRESS = '192.168.50.12'
     PROTOCOLS = [
         ("HTTP", ADDRESS, 80),

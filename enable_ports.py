@@ -3,7 +3,7 @@ import os
 def open_port_in_firewall(protocol:str, port:str):
     protocol.upper()
     port = str(port)
-    comando = f'netsh advfirewall firewall add rule name="Active Port Of The Protocol {protocol}" dir=in action=Active Port Of The Protocol {protocol} localport={port}'
+    comando = f'netsh advfirewall firewall add rule name="Active Port Of The Protocol {protocol}" dir=in action=allow protocol=TCP localport={port}'
     os.system(comando)
 
 if __name__ == "__main__":
